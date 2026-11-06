@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Casa Marçal Pacheco · T3 com terraço em Loulé</title>
+<meta name="description" content="Moradia T3 totalmente recuperada, com terraço de 29 m², a 100 m do Mercado Municipal de Loulé. Para arrendar.">
+<meta property="og:title" content="T3 com terraço no centro histórico de Loulé">
+<meta property="og:description" content="Totalmente recuperado · Terraço 29 m² · A 100 m do Mercado Municipal">
+<meta property="og:image" content="img/og.jpg">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cal:#fdfbf6;          /* white lime wash */
+  --azul:#1f4fa0;         /* azulejo blue */
+  --azul-esc:#14366f;
+  --azul-claro:#e9eff9;
+  --terra:#c45f34;        /* terracotta */
+  --ocre:#e0a43a;         /* ochre "barra" of Algarve houses */
+  --ink:#1b1f27; --muted:#5f6672; --line:#e8e3da; --card:#fff;
+  --tile:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Crect width='80' height='80' fill='%23f7f9fd'/%3E%3Cg fill='none' stroke='%231f4fa0' stroke-width='2.5'%3E%3Cpath d='M0 20A20 20 0 0 0 20 0M60 0A20 20 0 0 0 80 20M80 60A20 20 0 0 0 60 80M20 80A20 20 0 0 0 0 60'/%3E%3Crect x='26' y='26' width='28' height='28' transform='rotate(45 40 40)'/%3E%3C/g%3E%3Cg fill='%231f4fa0'%3E%3Cpath d='M40 23c5 8 5 9 0 17c-5-8-5-9 0-17zM40 57c5-8 5-9 0-17c-5 8-5 9 0 17zM23 40c8-5 9-5 17 0c-8 5-9 5-17 0zM57 40c-8-5-9-5-17 0c8 5 9 5 17 0z'/%3E%3Ccircle cx='0' cy='0' r='7'/%3E%3Ccircle cx='80' cy='0' r='7'/%3E%3Ccircle cx='0' cy='80' r='7'/%3E%3Ccircle cx='80' cy='80' r='7'/%3E%3C/g%3E%3Ccircle cx='40' cy='40' r='3.5' fill='%23f7f9fd'/%3E%3C/svg%3E");
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--cal);line-height:1.6;font-size:17px}
+img{display:block;max-width:100%}
+a{color:var(--azul)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+
+[data-en]{display:none}
+html[lang=en] [data-pt]{display:none}
+html[lang=en] [data-en]{display:revert}
+
+/* top bar */
+.bar{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:14px 20px;color:#fff;transition:background .25s,color .25s,box-shadow .25s}
+.bar.solid{background:rgba(253,251,246,.96);color:var(--ink);box-shadow:0 1px 0 var(--line);backdrop-filter:blur(8px)}
+.brand{font-family:Fraunces,serif;font-weight:600;font-size:18px;display:flex;align-items:center;gap:10px}
+.brand i{width:22px;height:22px;border-radius:4px;background:var(--tile) 0 0/22px 22px;box-shadow:0 0 0 1.5px rgba(255,255,255,.7)}
+.lang{display:flex;border:1px solid currentColor;border-radius:999px;overflow:hidden;font-size:13px;font-weight:600}
+.lang button{background:none;border:0;color:inherit;padding:5px 12px;cursor:pointer;font:inherit}
+.bar .lang button.on{background:#fff;color:var(--ink)}
+.bar.solid .lang button.on{background:var(--azul);color:#fff}
+
+/* hero */
+.hero{position:relative;height:94vh;min-height:560px;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#7aa3d6}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,25,55,.35) 0%,rgba(0,0,0,0) 28%,rgba(0,0,0,0) 40%,rgba(10,20,40,.62) 88%)}
+.hero .wrap{position:relative;z-index:2;padding-bottom:140px;width:100%}
+.eyebrow{font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:600}
+.hero h1{font-family:Fraunces,serif;font-weight:600;font-size:clamp(36px,6.4vw,70px);line-height:1.02;margin:12px 0 20px;max-width:13ch}
+.hero h1 em{font-style:italic;font-weight:400;color:#ffe2a8}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.38);backdrop-filter:blur(6px);padding:6px 14px;border-radius:999px;font-size:14px;font-weight:500}
+.roof{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:110px;z-index:1;fill:var(--cal)}
+
+/* facts with ochre barra */
+.facts{display:grid;grid-template-columns:repeat(4,1fr);background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin:-30px auto 0;position:relative;z-index:3;box-shadow:0 10px 30px rgba(20,54,111,.08);border-bottom:6px solid var(--ocre)}
+.fact{padding:22px 16px;text-align:center;border-left:1px solid var(--line)}
+.fact:first-child{border-left:0}
+.fact b{display:block;font-family:Fraunces,serif;font-size:30px;font-weight:600;color:var(--azul);line-height:1.1}
+.fact span{font-size:14px;color:var(--muted)}
+
+section{padding:84px 0 0}
+.kicker{display:flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--terra);margin-bottom:10px}
+.kicker::before{content:"";width:18px;height:18px;border-radius:3px;background:var(--tile) 0 0/18px 18px}
+h2{font-family:Fraunces,serif;font-weight:600;font-size:clamp(28px,3.8vw,40px);line-height:1.12;margin-bottom:18px}
+h2 em{font-style:italic;font-weight:400;color:var(--azul)}
+.lead{font-size:19px;max-width:60ch;color:#2b313b}
+.lead + .lead{margin-top:14px}
+
+/* intro with arched photos (Moorish arches of the Mercado) */
+.intro{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.arches{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;align-items:end}
+.arch{border-radius:999px 999px 10px 10px;overflow:hidden;aspect-ratio:3/5;border:5px solid #fff;box-shadow:0 8px 24px rgba(20,54,111,.14);cursor:zoom-in;padding:0;background:#ddd}
+.arch:nth-child(2){aspect-ratio:3/6}
+.arch img{width:100%;height:100%;object-fit:cover}
+
+/* feature cards */
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px;position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;left:0;right:0;top:0;height:6px;background:var(--azul)}
+.card:nth-child(2)::before{background:var(--terra)}
+.card:nth-child(3)::before{background:var(--ocre)}
+.card h3{font-family:Fraunces,serif;font-size:22px;font-weight:600;margin:4px 0 10px}
+.card ul{list-style:none}
+.card li{padding:8px 0;border-top:1px solid var(--line);font-size:16px}
+.card li:first-child{border-top:0}
+.card li b{font-weight:600}
+
+/* azulejo band */
+.band{height:64px;margin-top:84px;background:var(--tile) center/64px 64px;border-top:4px solid var(--azul);border-bottom:4px solid var(--azul)}
+
+/* gallery */
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px;margin-top:28px}
+.gallery button{display:block;width:100%;border:0;padding:0;background:#eee;border-radius:10px;overflow:hidden;cursor:zoom-in;position:relative;aspect-ratio:4/3}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.gallery button:hover img{transform:scale(1.04)}
+.gallery figcaption{position:absolute;left:8px;bottom:8px;background:rgba(20,30,50,.6);color:#fff;font-size:12px;padding:3px 9px;border-radius:999px}
+
+/* plans */
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}
+.plans button{border:1px solid var(--line);background:#fff;border-radius:16px;padding:14px;cursor:zoom-in;text-align:left;font:inherit;color:inherit}
+.plans img{border-radius:6px;width:100%;height:auto}
+.plans p{margin-top:10px;font-weight:600}
+
+/* location */
+.loc{display:grid;grid-template-columns:1fr 1.15fr;gap:36px;align-items:start}
+.loc ul{list-style:none;margin:6px 0 22px}
+.loc li{display:grid;grid-template-columns:86px 1fr;gap:12px;padding:12px 0;border-top:1px solid var(--line)}
+.loc li:first-child{border-top:0}
+.loc li em{font-style:normal;font-weight:600;color:var(--terra)}
+.addr{font-weight:600;margin-bottom:6px}
+.mapbox{border-radius:999px 999px 16px 16px;overflow:hidden;border:6px solid #fff;box-shadow:0 10px 30px rgba(20,54,111,.12);aspect-ratio:1/1;background:var(--azul-claro)}
+.mapbox iframe{width:100%;height:100%;border:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 22px;border-radius:12px;font-weight:600;text-decoration:none;font-size:16px}
+.btn.blue{background:var(--azul);color:#fff}
+
+/* terms on azulejo wall */
+.wall{margin-top:84px;padding:72px 0;background:var(--tile) 0 0/96px 96px}
+.terms{background:var(--azul-esc);color:#fff;border-radius:20px;padding:44px;display:grid;grid-template-columns:1.2fr 1fr;gap:36px;align-items:center;box-shadow:0 20px 50px rgba(10,30,70,.35);border:6px solid #fff}
+.terms h2{color:#fff}
+.terms h2 em{color:#ffd88f}
+.terms dl{display:grid;grid-template-columns:auto 1fr;gap:10px 24px;font-size:17px}
+.terms dt{opacity:.72}
+.terms dd{font-weight:600}
+.cta{display:flex;flex-direction:column;gap:12px}
+.cta .btn{display:flex;font-size:17px;padding:15px 22px}
+.btn.wa{background:#25d366;color:#08311a}
+.btn.ghost{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.35)}
+
+footer{padding:56px 0 48px;text-align:center;color:var(--muted);font-size:14px}
+footer svg{width:64px;height:auto;margin:0 auto 14px;display:block}
+footer .sig{font-family:Fraunces,serif;font-size:22px;color:var(--ink);margin-bottom:4px}
+
+/* lightbox */
+.lb{position:fixed;inset:0;background:rgba(8,14,28,.95);z-index:50;display:none;align-items:center;justify-content:center}
+.lb.open{display:flex}
+.lb img{max-width:94vw;max-height:84vh;border-radius:6px}
+.lb .cap{position:absolute;bottom:18px;left:0;right:0;text-align:center;color:#ddd;font-size:14px}
+.lb button{position:absolute;background:rgba(255,255,255,.14);border:0;color:#fff;width:48px;height:48px;border-radius:50%;font-size:24px;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.lb .x{top:16px;right:16px}
+.lb .prev{left:14px;top:50%;transform:translateY(-50%)}
+.lb .next{right:14px;top:50%;transform:translateY(-50%)}
+
+@media (max-width:860px){
+  body{font-size:16px}
+  .wrap{padding:0 16px}
+  .hero{height:86vh}
+  .hero .wrap{padding-bottom:110px}
+  .roof{height:80px}
+  .facts{grid-template-columns:repeat(2,1fr)}
+  .fact:nth-child(3){border-left:0}
+  .fact:nth-child(n+3){border-top:1px solid var(--line)}
+  .intro,.cols,.plans,.loc,.terms{grid-template-columns:1fr}
+  .intro{gap:32px}
+  section{padding-top:60px}
+  .band{margin-top:60px;height:48px;background-size:48px 48px}
+  .wall{margin-top:60px;padding:40px 0;background-size:72px 72px}
+  .terms{padding:28px 22px}
+  .gallery{grid-template-columns:1fr 1fr;gap:8px}
+  .gallery figcaption{font-size:11px}
+  .mapbox{aspect-ratio:4/5}
+}
+</style>
+</head>
+<body>
+
+<header class="bar" id="bar">
+  <div class="brand"><i aria-hidden="true"></i>Casa Marçal Pacheco</div>
+  <div class="lang" role="group" aria-label="Idioma / Language">
+    <button id="bt-pt" class="on" onclick="setLang('pt')">PT</button>
+    <button id="bt-en" onclick="setLang('en')">EN</button>
+  </div>
+</header>
+
+<div class="hero">
+  <img src="img/01.jpg" alt="Terraço com vista sobre os telhados de Loulé">
+  <div class="wrap">
+    <div class="eyebrow"><span data-pt>Para arrendar · Centro histórico de Loulé</span><span data-en>For rent · Loulé historic centre</span></div>
+    <h1><span data-pt>Um T3 com <em>terraço</em> sobre os telhados de Loulé</span><span data-en>A 3-bed home with a <em>terrace</em> over Loulé's rooftops</span></h1>
+    <div class="chips">
+      <span class="chip"><span data-pt>100 m do Mercado Municipal</span><span data-en>100 m from the Municipal Market</span></span>
+      <span class="chip"><span data-pt>Junto ao hospital</span><span data-en>Next to the hospital</span></span>
+      <span class="chip"><span data-pt>Totalmente recuperado</span><span data-en>Fully renovated</span></span>
+    </div>
+  </div>
+  <svg class="roof" viewBox="0 0 1440 130" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><path fill-rule="evenodd" d="M0 130 L0 92 L150 92 L150 78 L330 78 L330 96 L470 96 L470 70 L640 70 L640 88 L800 88 L800 74 L990 74 L990 94 L1130 94 L1130 80 L1300 80 L1300 90 L1440 90 L1440 130 ZM230 78 V42.0 H224.0 V33.0 L241.0 23.0 L258.0 33.0 V42.0 H252.0 V78 Z M235.0 47.0 h4.0 v6.0 h-4.0 Z M243.0 47.0 h4.0 v6.0 h-4.0 Z M235.0 56.0 h4.0 v6.0 h-4.0 Z M243.0 56.0 h4.0 v6.0 h-4.0 Z M560 70 V28.6 H553.1 V18.25 L572.65 6.75 L592.1999999999999 18.25 V28.6 H585.3 V70 Z M565.75 34.35 h4.6 v6.8999999999999995 h-4.6 Z M574.95 34.35 h4.6 v6.8999999999999995 h-4.6 Z M565.75 44.7 h4.6 v6.8999999999999995 h-4.6 Z M574.95 44.7 h4.6 v6.8999999999999995 h-4.6 Z M880 74 V41.6 H874.6 V33.5 L889.9 24.5 L905.1999999999999 33.5 V41.6 H899.8 V74 Z M884.5 46.1 h3.6 v5.4 h-3.6 Z M891.7 46.1 h3.6 v5.4 h-3.6 Z M884.5 54.2 h3.6 v5.4 h-3.6 Z M891.7 54.2 h3.6 v5.4 h-3.6 Z M1210 80 V40.4 H1203.4 V30.5 L1222.1 19.5 L1240.8 30.5 V40.4 H1234.2 V80 Z M1215.5 45.9 h4.4 v6.6000000000000005 h-4.4 Z M1224.3 45.9 h4.4 v6.6000000000000005 h-4.4 Z M1215.5 55.8 h4.4 v6.6000000000000005 h-4.4 Z M1224.3 55.8 h4.4 v6.6000000000000005 h-4.4 Z M60 92 V63.2 H55.2 V56.0 L68.8 48.0 L82.39999999999999 56.0 V63.2 H77.6 V92 Z M64.0 67.2 h3.2 v4.800000000000001 h-3.2 Z M70.4 67.2 h3.2 v4.800000000000001 h-3.2 Z M64.0 74.4 h3.2 v4.800000000000001 h-3.2 Z M70.4 74.4 h3.2 v4.800000000000001 h-3.2 Z "/></svg>
+</div>
+
+<div class="wrap">
+  <div class="facts">
+    <div class="fact"><b>3</b><span data-pt>quartos</span><span data-en>bedrooms</span></div>
+    <div class="fact"><b>~95 m²</b><span data-pt>área útil</span><span data-en>living area</span></div>
+    <div class="fact"><b>29 m²</b><span data-pt>terraço privativo</span><span data-en>private terrace</span></div>
+    <div class="fact"><b>2</b><span data-pt>pisos</span><span data-en>floors</span></div>
+  </div>
+
+  <section>
+    <div class="intro">
+      <div>
+        <div class="kicker"><span data-pt>A casa</span><span data-en>The house</span></div>
+        <h2><span data-pt>Uma casa nova, com a <em>alma</em> do Algarve antigo</span><span data-en>A new home with the <em>soul</em> of the old Algarve</span></h2>
+        <p class="lead" data-pt>Moradia T3 no coração do centro histórico de Loulé, a 100 m do emblemático Mercado Municipal e junto ao hospital. Tudo se faz a pé: comércio, cafés, restaurantes, serviços e o castelo.</p>
+        <p class="lead" data-en>A 3-bedroom house in the heart of Loulé's historic centre, 100 m from the iconic Municipal Market and next to the hospital. Shops, cafés, restaurants and the castle are all within walking distance.</p>
+        <p class="lead" data-pt>A casa foi totalmente recuperada. Manteve o caráter da arquitetura tradicional algarvia, como a escadaria de entrada revestida a azulejo azul e branco, o pavimento hidráulico e as portadas originais em madeira, cuidadosamente restauradas, e tem o conforto de uma casa nova.</p>
+        <p class="lead" data-en>The house has been fully renovated. It keeps the charm of traditional Algarvian architecture, with a blue-and-white tiled entrance staircase, patterned tile floors and the original wooden shutters, carefully restored, and has all the comfort of a new home.</p>
+      </div>
+      <div class="arches">
+        <button class="arch" onclick="openPhoto(10)"><img src="img/thumb/11.jpg" alt="Escadaria em azulejo"></button>
+        <button class="arch" onclick="openPhoto(2)"><img src="img/thumb/03.jpg" alt="Sala de estar"></button>
+        <button class="arch" onclick="openPhoto(5)"><img src="img/thumb/06.jpg" alt="Cozinha"></button>
+      </div>
+    </div>
+
+    <div class="cols">
+      <div class="card">
+        <h3><span data-pt>Piso principal</span><span data-en>Main floor</span></h3>
+        <ul data-pt>
+          <li><b>Sala de estar</b> (17,5 m²) com porta de sacada para a rua</li>
+          <li><b>Sala de jantar</b></li>
+          <li><b>2 quartos</b> (13,3 m² e 8,9 m²)</li>
+          <li><b>Cozinha equipada</b> (10 m²) com claraboia</li>
+          <li><b>Casa de banho</b> com duche em vidro</li>
+          <li><b>Lavandaria</b> com pátio interior e jardim vertical</li>
+        </ul>
+        <ul data-en>
+          <li><b>Living room</b> (17.5 m²) with French doors to the street</li>
+          <li><b>Dining room</b></li>
+          <li><b>2 bedrooms</b> (13.3 m² and 8.9 m²)</li>
+          <li><b>Fitted kitchen</b> (10 m²) with skylight</li>
+          <li><b>Bathroom</b> with glass shower enclosure</li>
+          <li><b>Laundry</b> with inner patio and vertical garden</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span data-pt>Piso superior</span><span data-en>Upper floor</span></h3>
+        <ul data-pt>
+          <li><b>Quarto/escritório</b> (9,4 m²) com janela para o terraço</li>
+          <li><b>Sótão</b> (7 m²), para arrumos ou leitura</li>
+          <li><b>Terraço privativo de 29 m²</b> com vista sobre os telhados e chaminés da zona histórica</li>
+        </ul>
+        <ul data-en>
+          <li><b>Bedroom/office</b> (9.4 m²) opening onto the terrace</li>
+          <li><b>Attic room</b> (7 m²), for storage or reading</li>
+          <li><b>Private 29 m² roof terrace</b> with views over the old town's rooftops and chimneys</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span data-pt>Características</span><span data-en>Features</span></h3>
+        <ul data-pt>
+          <li>Recuperação integral</li>
+          <li>Eletrodomésticos novos: placa de indução, forno, exaustor, frigorífico combinado, micro-ondas e máquina de lavar roupa</li>
+          <li>Caixilharia nova com vidros duplos e portadas originais restauradas</li>
+          <li>Ar condicionado</li>
+          <li>Soalho em madeira e muita luz natural</li>
+        </ul>
+        <ul data-en>
+          <li>Fully renovated</li>
+          <li>New appliances: induction hob, oven, extractor hood, fridge-freezer, microwave and washing machine</li>
+          <li>New double-glazed windows with the original restored shutters</li>
+          <li>Air conditioning</li>
+          <li>Wooden floors and lots of natural light</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="band" aria-hidden="true"></div>
+
+<div class="wrap">
+  <section id="fotos">
+    <div class="kicker"><span data-pt>Galeria</span><span data-en>Gallery</span></div>
+    <h2><span data-pt>Fotografias</span><span data-en>Photos</span></h2>
+    <div class="gallery" id="gallery"></div>
+  </section>
+
+  <section id="plantas">
+    <div class="kicker"><span data-pt>Distribuição</span><span data-en>Layout</span></div>
+    <h2><span data-pt>Plantas</span><span data-en>Floor plans</span></h2>
+    <div class="plans">
+      <button onclick="openPlan(0)"><img src="img/planta-piso0.jpg" alt="Planta do piso principal" loading="lazy"><p><span data-pt>Piso principal</span><span data-en>Main floor</span></p></button>
+      <button onclick="openPlan(1)"><img src="img/planta-piso1.jpg" alt="Planta do piso superior e terraço" loading="lazy"><p><span data-pt>Piso superior e terraço</span><span data-en>Upper floor and terrace</span></p></button>
+    </div>
+  </section>
+
+  <section id="localizacao">
+    <div class="loc">
+      <div>
+        <div class="kicker"><span data-pt>Localização</span><span data-en>Location</span></div>
+        <h2><span data-pt>Viver no <em>centro</em> de Loulé</span><span data-en>Living in the <em>heart</em> of Loulé</span></h2>
+        <p class="addr">Av. Marçal Pacheco, 96 · 8100-615 Loulé</p>
+        <ul>
+          <li><em>100 m</em><span data-pt>Mercado Municipal, com as suas cúpulas de inspiração árabe</span><span data-en>The Municipal Market, with its Moorish-style domes</span></li>
+          <li><em><span data-pt>A pé</span><span data-en>On foot</span></em><span data-pt>Hospital, castelo, comércio, cafés, restaurantes e serviços</span><span data-en>Hospital, castle, shops, cafés, restaurants and services</span></li>
+          <li><em><span data-pt>Carro</span><span data-en>By car</span></em><span data-pt>Praias de Quarteira e Vilamoura e aeroporto de Faro a cerca de 20 minutos</span><span data-en>Quarteira and Vilamoura beaches and Faro airport about 20 minutes away</span></li>
+        </ul>
+        <a class="btn blue" href="https://maps.app.goo.gl/G2jUGwTex8LwFZLW7" target="_blank" rel="noopener"><span data-pt>Abrir no Google Maps</span><span data-en>Open in Google Maps</span> ↗</a>
+      </div>
+      <div class="mapbox">
+        <iframe loading="lazy" title="Mapa" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Av.%20Mar%C3%A7al%20Pacheco%2096%2C%208100-615%20Loul%C3%A9&amp;z=16&amp;output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="wall" id="contacto">
+  <div class="wrap">
+    <div class="terms">
+      <div>
+        <h2><span data-pt>Condições de <em>arrendamento</em></span><span data-en>Rental <em>terms</em></span></h2>
+        <dl>
+          <dt><span data-pt>Renda</span><span data-en>Rent</span></dt><dd>[___] € <span data-pt>/ mês</span><span data-en>/ month</span></dd>
+          <dt><span data-pt>Caução</span><span data-en>Deposit</span></dt><dd>[___] <span data-pt>meses</span><span data-en>months</span></dd>
+          <dt><span data-pt>Disponível</span><span data-en>Available</span></dt><dd><span data-pt>a partir de</span><span data-en>from</span> [___]</dd>
+          <dt><span data-pt>Mobília</span><span data-en>Furniture</span></dt><dd><span data-pt>[Mobilado / Não mobilado]</span><span data-en>[Furnished / Unfurnished]</span></dd>
+          <dt><span data-pt>Contrato</span><span data-en>Lease</span></dt><dd><span data-pt>Longa duração</span><span data-en>Long-term</span></dd>
+        </dl>
+      </div>
+      <div class="cta">
+        <a class="btn wa" href="https://wa.me/351XXXXXXXXX?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20T3%20na%20Av.%20Mar%C3%A7al%20Pacheco%2C%20Loul%C3%A9" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn ghost" href="tel:+351XXXXXXXXX"><span data-pt>Ligar</span><span data-en>Call</span> +351 XXX XXX XXX</a>
+        <a class="btn ghost" href="mailto:seu@email.pt"><span data-pt>Enviar email</span><span data-en>Send email</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <svg viewBox="0 0 64 110" aria-hidden="true" fill="none" stroke="#1f4fa0" stroke-width="2.5" stroke-linejoin="round">
+    <path d="M32 6 L32 14"/><circle cx="32" cy="4" r="2.5" fill="#1f4fa0" stroke="none"/>
+    <path d="M14 34 L32 16 L50 34"/>
+    <path d="M8 34 H56 V42 H8 Z"/>
+    <path d="M14 42 V92 H50 V42"/>
+    <path d="M22 50 l5 6 -5 6 -5 -6 Z M42 50 l5 6 -5 6 -5 -6 Z M32 62 l5 6 -5 6 -5 -6 Z M22 74 l5 6 -5 6 -5 -6 Z M42 74 l5 6 -5 6 -5 -6 Z"/>
+    <path d="M4 92 H60 V100 H4 Z" fill="#e0a43a" stroke="#e0a43a"/>
+  </svg>
+  <div class="sig">Loulé · Algarve</div>
+  <span data-pt>Agende uma visita, teremos todo o gosto em mostrar a casa.</span><span data-en>Get in touch to arrange a viewing.</span>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true">
+  <button class="x" onclick="closeLb()" aria-label="Fechar">✕</button>
+  <button class="prev" onclick="step(-1)" aria-label="Anterior">‹</button>
+  <img id="lbimg" alt="">
+  <button class="next" onclick="step(1)" aria-label="Seguinte">›</button>
+  <div class="cap" id="lbcap"></div>
+</div>
+
+<script>
+const C = {
+  ter:["Terraço","Terrace"], sala:["Sala de estar","Living room"], coz:["Cozinha","Kitchen"],
+  esc:["Escadaria em azulejo","Tiled staircase"], ent:["Entrada","Entrance"], hall:["Hall","Hall"],
+  wc:["Casa de banho","Bathroom"], lav:["Lavandaria e pátio","Laundry and patio"], jar:["Jardim vertical","Vertical garden"],
+  qto:["Quarto","Bedroom"], int:["Interior","Interior"], sup:["Piso superior","Upper floor"]
+};
+const PHOTOS = ["ter","ter","sala","sala","sala","coz","coz","coz","coz","coz","esc","ent","esc","ent","hall","hall","hall","hall","wc","wc","wc","lav","jar","qto","qto","int","int","sup","sup","sup","sup","sup"];
+let lang = "pt", list = [], idx = 0;
+const L = () => lang === "pt" ? 0 : 1;
+const n2 = i => String(i+1).padStart(2,"0");
+
+function photoList(){ return PHOTOS.map((k,j)=>({src:`img/${n2(j)}.jpg`,cap:C[k][L()]})); }
+function openPhoto(i){ list = photoList(); show(i); }
+function buildGallery(){
+  const g = document.getElementById("gallery");
+  g.innerHTML = "";
+  PHOTOS.forEach((k,i)=>{
+    const b = document.createElement("button");
+    b.innerHTML = `<img src="img/thumb/${n2(i)}.jpg" alt="${C[k][L()]}" loading="lazy"><figcaption>${C[k][L()]}</figcaption>`;
+    b.onclick = () => openPhoto(i);
+    g.appendChild(b);
+  });
+}
+function openPlan(i){
+  list = [{src:"img/planta-piso0.jpg",cap:L()?"Main floor":"Piso principal"},{src:"img/planta-piso1.jpg",cap:L()?"Upper floor and terrace":"Piso superior e terraço"}];
+  show(i);
+}
+function show(i){
+  idx = (i + list.length) % list.length;
+  document.getElementById("lbimg").src = list[idx].src;
+  document.getElementById("lbcap").textContent = `${list[idx].cap} · ${idx+1}/${list.length}`;
+  document.getElementById("lb").classList.add("open");
+  document.body.style.overflow = "hidden";
+}
+function step(d){ show(idx + d); }
+function closeLb(){ document.getElementById("lb").classList.remove("open"); document.body.style.overflow = ""; }
+const lb = document.getElementById("lb");
+lb.addEventListener("click", e => { if (e.target.id === "lb") closeLb(); });
+document.addEventListener("keydown", e => {
+  if (!lb.classList.contains("open")) return;
+  if (e.key === "Escape") closeLb(); if (e.key === "ArrowRight") step(1); if (e.key === "ArrowLeft") step(-1);
+});
+let tx = 0;
+lb.addEventListener("touchstart", e => tx = e.touches[0].clientX, {passive:true});
+lb.addEventListener("touchend", e => { const d = e.changedTouches[0].clientX - tx; if (Math.abs(d) > 50) step(d < 0 ? 1 : -1); });
+
+function setLang(l){
+  lang = l; document.documentElement.lang = l;
+  document.getElementById("bt-pt").classList.toggle("on", l==="pt");
+  document.getElementById("bt-en").classList.toggle("on", l==="en");
+  buildGallery();
+  try { localStorage.setItem("lang", l); } catch(e){}
+}
+const bar = document.getElementById("bar");
+addEventListener("scroll", () => bar.classList.toggle("solid", scrollY > innerHeight*0.6), {passive:true});
+
+let saved = null; try { saved = localStorage.getItem("lang"); } catch(e){}
+if (!saved && /^en/i.test(navigator.language || "")) saved = "en";
+setLang(saved === "en" ? "en" : "pt");
+</script>
+</body>
+</html>
