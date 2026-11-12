@@ -53,6 +53,7 @@ html[lang=en] [data-en]{display:revert}
 .hero h1{font-family:Fraunces,serif;font-weight:600;font-size:clamp(36px,6.4vw,70px);line-height:1.02;margin:12px 0 20px;max-width:13ch}
 .hero h1 em{font-style:italic;font-weight:400;color:#ffe2a8}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip.chip-hl{background:#e0a43a;border-color:#e0a43a;color:#1b1f27;font-weight:600}
 .chip{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.38);backdrop-filter:blur(6px);padding:6px 14px;border-radius:999px;font-size:14px;font-weight:500}
 .roof{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:110px;z-index:1;fill:var(--cal)}
 
@@ -179,9 +180,10 @@ footer .sig{font-family:Fraunces,serif;font-size:22px;color:var(--ink);margin-bo
 <div class="hero">
   <img src="img/01.jpg" alt="Terraço com vista sobre os telhados de Loulé">
   <div class="wrap">
-    <div class="eyebrow"><span data-pt>Para arrendar · Centro histórico de Loulé</span><span data-en>For rent · Loulé historic centre</span></div>
+    <div class="eyebrow"><span data-pt>Brevemente para arrendar · Centro histórico de Loulé</span><span data-en>Soon for rent · Loulé historic centre</span></div>
     <h1><span data-pt>Um T3 com <em>terraço</em> sobre os telhados de Loulé</span><span data-en>A 3-bed home with a <em>terrace</em> over Loulé's rooftops</span></h1>
     <div class="chips">
+      <span class="chip chip-hl"><span data-pt>Brevemente disponível</span><span data-en>Available soon</span></span>
       <span class="chip"><span data-pt>100 m do Mercado Municipal</span><span data-en>100 m from the Municipal Market</span></span>
       <span class="chip"><span data-pt>Junto ao hospital</span><span data-en>Next to the hospital</span></span>
       <span class="chip"><span data-pt>Totalmente recuperado</span><span data-en>Fully renovated</span></span>
@@ -315,16 +317,19 @@ footer .sig{font-family:Fraunces,serif;font-size:22px;color:var(--ink);margin-bo
         <dl>
           <dt><span data-pt>Renda</span><span data-en>Rent</span></dt><dd>1600 € <span data-pt>/ mês</span><span data-en>/ month</span></dd>
           <dt><span data-pt>Caução</span><span data-en>Deposit</span></dt><dd> 2 <span data-pt>meses</span><span data-en>months</span></dd>
-          <dt><span data-pt>Disponível</span><span data-en>Available</span></dt><dd><span data-pt>a partir de</span><span data-en>from</span> 7 de Novembro</dd>
+          <dt><span data-pt>Disponível</span><span data-en>Available</span></dt><dd><span data-pt>brevemente</span><span data-en>soon</span></dd>
           <dt><span data-pt>Mobília</span><span data-en>Furniture</span></dt><dd><span data-pt>Não mobilado</span><span data-en>Unfurnished</span></dd>
           <dt><span data-pt>Contrato</span><span data-en>Lease</span></dt><dd><span data-pt>Longa duração</span><span data-en>Long-term</span></dd>
         </dl>
+        <p style="margin-top:18px;opacity:.85;font-size:15px"><span data-pt>A casa está temporariamente indisponível. Esta página será atualizada quando voltar a estar disponível para arrendar.</span><span data-en>The house is temporarily unavailable. This page will be updated as soon as it is available for rent again.</span></p>
       </div>
+      <!-- CONTACTOS OCULTOS ENQUANTO A CASA ESTÁ INDISPONÍVEL: apagar esta linha e a linha "FIM" para voltar a mostrar
       <div class="cta">
         <a class="btn wa" href="https://wa.me/351914716513?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20T3%20na%20Av.%20Mar%C3%A7al%20Pacheco%2C%20Loul%C3%A9" target="_blank" rel="noopener">WhatsApp</a>
         <a class="btn ghost" href="tel:+351914716513"><span data-pt>Ligar</span><span data-en>Call</span> +351 914 716 513</a>
         <a class="btn ghost" href="mailto:diferent.spots@gmail.com"><span data-pt>Enviar email</span><span data-en>Send email</span></a>
       </div>
+      FIM -->
     </div>
   </div>
 </div>
@@ -339,7 +344,7 @@ footer .sig{font-family:Fraunces,serif;font-size:22px;color:var(--ink);margin-bo
     <path d="M4 92 H60 V100 H4 Z" fill="#e0a43a" stroke="#e0a43a"/>
   </svg>
   <div class="sig">Loulé · Algarve</div>
-  <span data-pt>Agende uma visita, teremos todo o gosto em mostrar a casa.</span><span data-en>Get in touch to arrange a viewing.</span>
+  <span data-pt>Brevemente disponível para arrendar.</span><span data-en>Available for rent soon.</span>
 </footer>
 
 <div class="lb" id="lb" role="dialog" aria-modal="true">
